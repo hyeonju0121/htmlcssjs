@@ -1,0 +1,18 @@
+package com.mycompany.htmlcssjs.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Controller
+@RequestMapping("/shop")
+@Slf4j
+public class MainController {
+	@RequestMapping("")
+	public String home() {
+		log.info("home() 실행");
+		return "shop/main";
+	}
+
+}
