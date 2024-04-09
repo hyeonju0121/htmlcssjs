@@ -14,5 +14,12 @@ public class MainController {
 		log.info("home() 실행");
 		return "shop/main";
 	}
+	
+	@RequestMapping("/cart")
+	public String cart() {
+		log.info("cart() 실행");
+		return "shop/cart";
+	}
+	
 
 }
