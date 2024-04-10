@@ -21,5 +21,11 @@ public class MainController {
 		return "shop/cart";
 	}
 	
+	@RequestMapping("/cartTemp")
+	public String cartTemp() {
+		log.info("cartTemp() 실행");
+		return "shop/cartTemp";
+	}
+	
 
 }

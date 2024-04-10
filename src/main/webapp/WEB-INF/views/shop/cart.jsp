@@ -16,11 +16,7 @@
 		<!--사용자 정의 스크립트 -->
 		<script type="text/javascript">
 		</script>
-		
-		<style>
 
-		</style>
-		
 	</head>
 	
 	<body>
@@ -47,58 +43,100 @@
 						</div>
 					</ul>
 				</div>
-				<button class="btn" onclick="location.href='#'"><img id="cartIcon" src="./resources/image/icon/cart.png" style="height: 25px;"/></button>
-				<button class="btn" onclick="location.href='#'"><img id="userIcon" src="./resources/image/icon/user.png" style="height: 25px;"/></button>
+				<button class="btn" onclick="location.href='#'"><img id="cartIcon" src="/htmlcssjs/resources/image/icon/cart.png" style="height: 25px;"/></button>
+				<button class="btn" onclick="location.href='#'"><img id="userIcon" src="/htmlcssjs/resources/image/icon/user.png" style="height: 25px;"/></button>
 			</div>
 		</nav>
 		
-		<!-- ----------------------------------- -->
-		<div class="container p-5 my-5 ">
-  			<h2 style="text-align:center;"> 장바구니</h2>
-  			
-  			<div class="d-flex flex-column vh-100 mt-5">
-				<div class="flex-grow-1 m-2">
-					<div class="d-flex justify-content-center">
-						<!-- item -->
-						<div class="d-flex col-md-7 p-1 bg-warning">
-							<div class="col-md-3 border">
-								<img src="/htmlcssjs/resources/image/detail/img2.png" class="card-img-top rounded-3">
-							</div>
-							
-							<div class="col-md-7 border">
-								<div class="container mt-4">
-									<h5>라이필</h5>
-									<a href="#">[라이필]복숭아맛구미 비타민C&D 3000</a>
-								</div>
-							</div>
-							
-							<div class="col-md-3 border">
-								<div class="container mt-4">
-									<h2>18,000</h2>
-								</div>
-								<!-- <div class="card">
-									<div class="card-header">주문하는 부분</div>
-										<div class="card-body">
-											선택 상품 확인, 주문하기 버튼 
+		<!-- cart page ------------------ -->
+		<div class="container mt-5">
+			<h2 style="text-align:center;"> 장바구니</h2>
+			<div class="row">
+				<div class="col-sm-8 border mt-5">
+					<div class="cart-table">
+						<table class="table p-2">
+							<thead>
+								<tr>
+									<th><input type="checkbox" name="allCheck" id="allCheck"/></th>
+									<th class="product-h">Product</th>
+									<th>Price</th>
+									<th>Quantity</th>
+									<th>Total</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<!-- 체크박스 -->
+									<td><input id="check1" type="checkbox"/>
+									</td>
+									<!-- 상품 이미지 -->
+									<td class="procuct-col">
+										<img src="/htmlcssjs/resources/image/detail/img1.png" style="width:180px;height:180px;"/>
+										<div class="p-title">
+											<h5><a href="#">복숭아맛구미 비타민C&D 3000</a></h5>
 										</div>
-									</div>
-								</div> -->
-							</div>
-						
-						<!-- check -->
-						<div class="border col-md-4 p-1">
-							<div class="card">
-								<div class="card-header">주문하는 부분</div>
-								<div class="card-body">
-									선택 상품 확인, 주문하기 버튼 
-								</div>
-							</div>
+									</td>
+									<!-- 상품 가격 -->
+									<td class="price-col">
+										<h5>18,000원</h5>
+									</td>
+									<!-- 상품 수량 -->
+									<td>
+										<h5>1개</h5>
+									</td>
+									<!-- 총 가격 -->
+									<td>
+										<h5>19,000원</h5>
+									</td>
+									<!-- 상품 삭제 버튼 -->
+									<td class="product-close">
+										<button type="button" class="btn btn-outline-primary">x</button>
+									</td>
+								</tr>
+								<tr>
+									<!-- 체크박스 -->
+									<td><input id="check2" type="checkbox"/>
+									</td>
+									<!-- 상품 이미지 -->
+									<td class="procuct-col">
+										<img src="/htmlcssjs/resources/image/detail/img2.png" style="width:180px;height:180px;"/>
+										<div class="p-title">
+											<h5><a href="#">트리플콜라겐 오렌지 28개입</a></h5>
+										</div>
+									</td>
+									<!-- 상품 가격 -->
+									<td class="price-col">
+										<h5>9,000원</h5>
+									</td>
+									<!-- 상품 수량 -->
+									<td>
+										<h5>3개</h5>
+									</td>
+									<!-- 총 가격 -->
+									<td>
+										<h5>27,000원</h5>
+									</td>
+									<!-- 상품 삭제 버튼 -->
+									<td class="product-close">
+										<button type="button" class="btn btn-outline-primary">x</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>				
+					</div>
+				</div>
+				
+				<div class="col-sm-4 border mt-5">
+					<div class="card">
+						<div class="card-header">주문하는 부분</div>
+						<div class="card-body">
+							선택 상품 확인, 주문하기 버튼 
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		
+
 	</body>
 </html>
